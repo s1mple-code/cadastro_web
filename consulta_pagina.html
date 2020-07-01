@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista Telefonica</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+        function cadastro(){
+            location.href ="cadastro_pagina.html"
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Consulta de telefone</h1>
+        <form name="form_user" action="receber.php" method="POST">
+
+            Nome: <textarea name="nome" id="" cols="15" rows="1" style="resize: none"></textarea><br><br>
+            E-mail: <textarea name="email" id="" cols="15" rows="1" style="resize: none"></textarea><br><br>
+            DDD: <textarea name="ddd" id="" cols="3" rows="1" style="resize: none"></textarea>
+            Telefone: <textarea name="telefone" id="" cols="15" rows="1" style="resize: none"></textarea><br><br>
+            Cpf:<textarea name="cpf" id="" cols="15" rows="1" style="resize: none"></textarea><br><br>
+            <input type="submit" onclick="return validar()" value="Consulta">
+
+        </form>
+
+        <form action="cadastro_pagina.html">
+            <input type="submit" onclick="cadastro()" value="Cadastro">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lista Telefonica</title>
+    <meta charset="utf-8">
+    <script src="teste.js"></script>
+    <link rel="stylesheet" href="stile.css">
+</head>
+
+<body>
+    <h1>Cadastrar Usuário</h1>
+    <form name="form_user" action="enviar.php" method="POST">
+        <label>Nome:</label> <input type="text" name="nome"><br><br> 
+        <label>E-mail:</label> <input type="email" name="email"><br><br> 
+        <label>DDD:</label> <input type="number" name="ddd" max="99" min="10">
+        <label>Telefone:</label> <input type="number" name="telefone"><br><br> 
+        <label>CPF:</label> <input type="number" name="cpf"><br><br>
+        <input type="submit" onclick="return validar()" value="Cadastro">
+    </form>
+
+    <form action="consulta_pagina.html">
+        <input type="submit" onclick="consulta()" value="Consulta">
+    </form>
+</body>
+
+</html>
