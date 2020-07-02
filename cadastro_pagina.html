@@ -11,17 +11,30 @@
 <body>
     <h1>Cadastrar Usuário</h1>
     <form name="form_user" action="enviar.php" method="POST">
-        <label>Nome:</label> <input type="text" name="nome"><br><br> 
-        <label>E-mail:</label> <input type="email" name="email"><br><br> 
-        <label>DDD:</label> <input type="number" name="ddd" max="99" min="10">
-        <label>Telefone:</label> <input type="number" name="telefone"><br><br> 
-        <label>CPF:</label> <input type="number" name="cpf"><br><br>
-        <input type="submit" onclick="return validar()" value="Cadastro">
+        <div class="wrapper">
+            <div>
+              <label>Nome:</label><br><br>
+              <label>E-mail:</label><br><br>  
+              <label>DDD:</label> 
+              <label>Telefone:</label><br><br> 
+              <label>CPF:</label><br><br> 
+            </div>
+            <div>
+              <input type="text" name="nome"><br><br> 
+              <input type="email" name="email"><br><br>
+              <input class="ddd" type="number" name="ddd" max="99" min="10">
+              <input class="num" type="number" name="telefone"><br><br> 
+              <input class="num" type="number" name="cpf"><br><br>
+
+            </div>
+        </div>
+        <div class="botao">
+            <button  type="submit" onclick="return validar()" value="Cadastro">Cadastrar</button>
+            
+        </div>
+
     </form>
 
-    <form action="consulta_pagina.html">
-        <input type="submit" onclick="consulta()" value="Consulta">
-    </form>
 </body>
 
 </html>

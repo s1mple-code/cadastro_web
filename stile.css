@@ -2,3 +2,28 @@ body{background-color: #eeeeee;}
 label{font-weight: bold;
       color: #606060;
 }
+.wrapper{
+      display: grid;
+      grid-template-columns: 80px 100px 100px;
+}
+label{
+      font-size: 105%;
+}
+input{
+      border:1px solid #2c2568;  
+      width: 200%;
+}
+.botao{
+      display: grid;
+      grid-template-columns: 80px 100px 100px;
+}
+button{
+      background-color: #3c338b;
+      color: beige;
+}
+.ddd{
+      width: 40%;
+}
+.num{
+      width: 150%;
+}
